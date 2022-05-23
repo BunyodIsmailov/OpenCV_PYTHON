@@ -2,13 +2,13 @@ import numpy as np
 import face_recognition as fr
 import cv2
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(1)
 
-bruno_image = fr.load_image_file("bruno.jpg")
-bruno_face_encoding = fr.face_encodings(bruno_image)[0]
+_image = fr.load_image_file("....jpg")
+_face_encoding = fr.face_encodings(_image)[0]
 
-known_face_encondings = [bruno_face_encoding]
-known_face_names = ["Bruno"]
+known_face_encondings = [_face_encoding]
+known_face_names = ["Bunyod"]
 
 while True: 
     ret, frame = video_capture.read()
